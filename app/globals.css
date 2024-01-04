@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section{}
+  .separate{
+    @apply mt-[88px] mb-[72px] h-[2px] bg-gray-70 container mx-auto;
+  }
+  .section-default {
+    @apply pt-[44px] lg:pt-[88px] pb-[72px] border-b-2 border-b-gray-950;
+  }
+}
