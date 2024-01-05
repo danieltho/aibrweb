@@ -14,6 +14,7 @@ import {
     NavbarMenuToggle
 } from "@nextui-org/react";
 import {useState} from "react";
+import {lato} from "../ui/fonts";
 
 const styles = {
     default: {
@@ -69,7 +70,7 @@ export const Header = ({...props}) => {
                                 }
                                 href="#"
                                 size="lg"
-                                className={`text-gray-950 text-sm hover:text-black transition-colors duration-200 uppercase`}
+                                className={`text-gray-950 text-base hover:text-black transition-colors duration-200 uppercase`}
                             >
                                 {item}
                             </Link>
@@ -77,23 +78,19 @@ export const Header = ({...props}) => {
                     ))}
                 </NavbarContent>
                 <NavbarContent justify="end">
-                    <Link href={`/asociarse`}>
-                        <Button primary active label={`Asociarse`}/>
-                    </Link>
-                    <Link href={`/login`}>
+                    <Link href={`/login`} className={`${lato.className} antialiased py-3 px-3    text-base border rounded-full`}>
                         login
                     </Link>
                 </NavbarContent>
                 <NavbarMenu>
                     {menuItems.map((item, index) => (
-                        <NavbarMenuItem key={`${item}-${index}`}>
+                        <NavbarMenuItem key={`${item}-${index}`} className={``}>
                             <Link
-                                className="w-full"
+                                className="w-full text-base flex flex-col items-center"
                                 color={
                                     index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
                                 }
                                 href="#"
-                                size="lg"
                             >
                                 {item}
                             </Link>
