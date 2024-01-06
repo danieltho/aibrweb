@@ -36,6 +36,6 @@ const {nextui} = require("@nextui-org/react");
     },
   },
   plugins: [
-    nextui()
+    nextui(),
   ],
 }
