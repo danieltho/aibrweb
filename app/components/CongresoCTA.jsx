@@ -2,6 +2,7 @@ import Image from "next/image";
 import {Button} from "./Button";
 import {lato} from "../ui/fonts";
 import Link from "next/link";
+import {Acronimo} from "@/app/ui/Acronimo";
 
 export const CongresoCTA = () => {
     return (
@@ -17,7 +18,7 @@ export const CongresoCTA = () => {
                         <h1 className={`${lato.className} antialiased font-bold text-4xl md:text-5xl text-pretty leading-none`}>10º Congreso Internacional de Antropología.</h1>
                         <h2 className={`${lato.className} antialiased font-light text-3xl md:text-4xl text-pretty leading-none`}>Madrid, 9-12 de julio de 2024</h2>
                         <p className={`${lato.className} antialiased font-light text-lg md:text-2xl text-pretty leading-normal `}>
-                            La nueva edición del Congreso Internacional de Antropología AIBR reunirá en Madrid a casi un millar de especialistas en antropología, con énfasis especial en el impacto investigador de la Inteligencia Artificial.
+                            La nueva edición del Congreso Internacional de Antropología <Acronimo>AIBR</Acronimo> reunirá en Madrid a casi un millar de especialistas en antropología, con énfasis especial en el impacto investigador de la Inteligencia Artificial.
                         </p>
                         <div className={`flex gap-x-2`}>
                             <Link href={`/congreso`}  className={`${lato.className} antialiased font-bold text-2xl py-3 px-6 border rounded-full`}>
