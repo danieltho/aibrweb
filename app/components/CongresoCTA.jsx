@@ -8,7 +8,7 @@ export const CongresoCTA = () => {
     return (
         <div className={`section-default`}>
             <div className={`container m-auto`}>
-                <div className={`flex justify-center items-center gap-x-4 xl:gap-x-8`}>
+                <div className={`grid xl:grid-cols-2 gap-x-4 xl:gap-x-8 px-6`}>
                     <Image src={`/congreso.png`}
                            width={`633`}
                            className={`hidden xl:block`}
