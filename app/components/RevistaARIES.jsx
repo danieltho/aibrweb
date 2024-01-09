@@ -1,10 +1,8 @@
-import {StyledText} from "./StyledText";
 import exampleImage from "../../public/assets/images/ARIESlogo.png";
-import {Button} from "./Button";
 import Image from "next/image";
-import {Separate} from "./Separate";
 import {Acronimo} from "@/app/ui/Acronimo";
 import {lato} from "@/app/ui/fonts";
+import {Chip} from "@nextui-org/react";
 
 export const RevistaARIES = () => {
     return (
@@ -25,16 +23,16 @@ export const RevistaARIES = () => {
                             </p>
                             <h3 className={`${lato.className} antialiased text-2xl font-bold`}>Secciones temáticas</h3>
                             <div className={`flex justify-start flex-wrap items-center gap-2`}>
-                                <Button label={`Descargas de pdfs`}/>
-                                <Button label={`Contacta con autores`}/>
-                                <Button label={`Enviar columna de opiniones`}/>
-                                <Button label={`Acceso a las comunicaciones`}/>
-                                <Button label={`Promociona tus libros`}/>
-                                <Button label={`Solicitudes de DOIS`}/>
-                                <Button label={`Secciones de artículos`}/>
-                                <Button label={`Envio de reseñas de libros`}/>
-                                <Button label={`Videos`}/>
-                                <Button label={`Podcasts`}/>
+                                <Chip>Descargas de pdfs</Chip>
+                                <Chip>Contacta con autores</Chip>
+                                <Chip>Enviar columna de opiniones</Chip>
+                                <Chip>Acceso a las comunicaciones</Chip>
+                                <Chip>Promociona tus libros</Chip>
+                                <Chip>Solicitudes de DOIS</Chip>
+                                <Chip>Secciones de artículos</Chip>
+                                <Chip>Envio de reseñas de libros`</Chip>
+                                <Chip>Videos</Chip>
+                                <Chip>Podcasts</Chip>
                             </div>
                         </div>
                     </div>
